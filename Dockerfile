@@ -10,6 +10,7 @@ RUN go get github.com/golang/dep/cmd/dep
 
 # Gometalinter
 RUN go get gopkg.in/alecthomas/gometalinter.v2
+RUN gometalinter.v2 --install
 
 # Stringer
 RUN go get golang.org/x/tools/cmd/stringer
