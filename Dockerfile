@@ -8,9 +8,8 @@ RUN go get github.com/DATA-DOG/godog/cmd/godog
 # Dep
 RUN go get github.com/golang/dep/cmd/dep
 
-# Gometalinter
-RUN go get gopkg.in/alecthomas/gometalinter.v2
-RUN gometalinter.v2 --install
+# Golangci-lint
+RUN wget -O - -q https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh| sh -s v1.12.2
 
 # Stringer
 RUN go get golang.org/x/tools/cmd/stringer
