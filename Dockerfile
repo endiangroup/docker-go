@@ -1,4 +1,4 @@
-FROM golang:1.11.2-alpine3.8
+FROM golang:1.11.2-alpine3.9
 
 RUN apk update && apk add --update alpine-sdk git make gcc build-base musl-dev linux-headers ca-certificates python2 curl protobuf protobuf-dev zip
 
